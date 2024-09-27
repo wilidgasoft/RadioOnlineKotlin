@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Album cover -->
+    <ImageView
+        android:id="@+id/albumCover"
+        android:layout_width="285dp"
+        android:layout_height="277dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle_background"
+        android:contentDescription="Album Cover"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Audio Title -->
+
+    <!-- Play/Pause Button -->
+
+    <TextView
+        android:id="@+id/audioTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Live Radio Stream"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/albumCover" />
+
+
+    <!-- Facebook Icon -->
+
+    <!-- Instagram Icon -->
+
+    <!-- X (Twitter) Icon -->
+
+    <ImageButton
+        android:id="@+id/playPauseButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/round_button_background"
+        android:contentDescription="Play"
+        android:src="@android:drawable/ic_media_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/audioTitle" />
+
+    <ImageView
+        android:id="@+id/facebookIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="68dp"
+        android:clickable="true"
+        android:contentDescription="Facebook Icon"
+        android:focusable="true"
+        android:src="@drawable/facebook"
+        app:layout_constraintEnd_toStartOf="@+id/instagramIcon"
+        app:layout_constraintTop_toBottomOf="@+id/playPauseButton" />
+
+    <ImageView
+        android:id="@+id/instagramIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:clickable="true"
+        android:contentDescription="Instagram Icon"
+        android:focusable="true"
+        android:src="@drawable/instagram"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/playPauseButton"
+        app:layout_constraintStart_toStartOf="@+id/playPauseButton"
+        app:layout_constraintTop_toBottomOf="@+id/playPauseButton"
+        app:layout_constraintVertical_bias="0.235" />
+
+    <ImageView
+        android:id="@+id/xIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="60dp"
+        android:clickable="true"
+        android:contentDescription="X (Twitter) Icon"
+        android:focusable="true"
+        android:src="@drawable/twitter"
+        app:layout_constraintStart_toEndOf="@+id/instagramIcon"
+        app:layout_constraintTop_toBottomOf="@+id/playPauseButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
